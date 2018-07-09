@@ -22,6 +22,7 @@ Article.js TODO's:
 
 articleView.js TODO's:
 07-08-2018 9:30pm - Completed first todo, wrapped articleView.js in an IIFE.
+07-08-2018 9:48pm - Completed second todo, called the Handlebars.compile method.
 
 ## Credits and Collaborations
 Sarah
