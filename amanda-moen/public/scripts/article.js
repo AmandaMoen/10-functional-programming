@@ -1,7 +1,7 @@
 'use strict';
 var app = app || {};
 
-// TODO: Wrap the contents of this file, except for the preceding 'use strict' and 'var app...' declarations, in an IIFE.
+// DONE: Wrap the contents of this file, except for the preceding 'use strict' and 'var app...' declarations, in an IIFE.
 // Give the IIFE a parameter called 'module'.
 // At the very end of the code, but still inside the IIFE, attach the 'Article' object to 'module'.
 // Where the IIFE is invoked, pass in the global 'app' object that is defined above.
@@ -32,6 +32,7 @@ var app = app || {};
     /* OLD forEach():
     articleData.forEach(articleObject => Article.all.push(new Article(articleObject)));
     */
+    Article.all = articleData.map(articleObject => new Article(articleObject));
 
   };
 
@@ -43,10 +44,10 @@ var app = app || {};
       })
   };
 
-  // TODO: Chain together a .map() and a .reduce() call to get a rough count of all words in all articles. Yes, you have to do it this way.
+  // DONE: Chain together a .map() and a .reduce() call to get a rough count of all words in all articles. Yes, you have to do it this way.
 
   Article.numWordsAll = () => {
-    return Article.all.map().reduce()
+    return Article.all.map(element => element.body.split(' ').length).reduce((sum, current) => sum + current);
   };
 
   // TODO: Chain together a .map() and a .reduce() call to produce an array of unique author names. You will probably need to use the optional accumulator argument in your reduce call.
