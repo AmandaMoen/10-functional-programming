@@ -2,16 +2,16 @@
 # Kilovolt Blog "Lab 10 Functional Programming"
 
 **Author**: Amanda Moen
-**Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
+**Version**: 2.0.1 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 301 class. (i.e. What's your problem domain?) -->
+We want to create an administrative page that shows various statistics for the displayed articles and their authors. We also want to implement IIFE's so that all of the function calls are executed upon page load.
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+Clone, or fork & clone, npm i, nodemon, then run localhost in the browser.
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+HTML, CSS3, javascript, jquery, Handlebars, pg, fs, express, highlight.pack.js, marked.js, AJAX, node, SQL, JSON
 
 ## Change Log
 Article.js TODO's:
@@ -23,6 +23,13 @@ Article.js TODO's:
 articleView.js TODO's:
 07-08-2018 9:30pm - Completed first todo, wrapped articleView.js in an IIFE.
 07-08-2018 9:48pm - Completed second todo, called the Handlebars.compile method.
+
+server.js TODO's:
+07-08-2018 7:45pm - Set my conString.
+
+admin.html; index.html; and new.html:
+07-08-2018 9:54pm - Completed the Handlebars .compile() method on admin.html
+07-08-2018 10:16pm - Completed updating the Article.fetchAll() method for admin.html, and index.html
 
 ## Credits and Collaborations
 Sarah
