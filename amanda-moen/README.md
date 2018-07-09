@@ -15,8 +15,8 @@
 
 ## Change Log
 07-08-2018 8:05pm - Completed first todo, wrapped article.js in an IIFE.
-07-08-2018 8:35pm - Completed second todo, chained together .map() and .reduce() call.
-
+07-08-2018 8:35pm - Completed second todo, chained together .map() and .reduce() call to get rough count of all words in all articles.
+07-08-2018 8:40pm - Completed third todo, chained together .map() and .reduce() call to get an array of unique author names.
 
 ## Credits and Collaborations
 Sarah
