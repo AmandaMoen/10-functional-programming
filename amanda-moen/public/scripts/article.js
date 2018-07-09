@@ -50,10 +50,15 @@ var app = app || {};
     return Article.all.map(element => element.body.split(' ').length).reduce((sum, current) => sum + current);
   };
 
-  // TODO: Chain together a .map() and a .reduce() call to produce an array of unique author names. You will probably need to use the optional accumulator argument in your reduce call.
+  // DONE: Chain together a .map() and a .reduce() call to produce an array of unique author names. You will probably need to use the optional accumulator argument in your reduce call.
 
   Article.allAuthors = () => {
-    return Article.all.map().reduce();
+    return Article.all.map(element => element.author).reduce(function(authors, author) {
+      if(authors.indexOf(author) === -1) {
+        authors.push(author);
+      }
+      return authors;
+    }, []);
   };
 
   Article.numWordsByAuthor = () => {
